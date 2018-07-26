@@ -16,23 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
-        /* Skúška čislo jedna
-        let url = URL(string: "https://api.skypicker.com/flights?flyFrom=CZ&to=porto&dateFrom=08/11/2018&dateTo=08/12/2018&daysInDestinationFrom=2&daysInDestinationTo=14&typeFlight=round&passengers=1&adults=1&children=0&infants=0&directFlights=0&partner=picky&curr=EUR&price_from=1&price_to=10000&asc=1")!
-        let networkProcessor = NetworkProcessor(url: url)
-        networkProcessor.downloadJSONFromURL { (result) in
-            print(result)
-        }*/
-        
-        
-        let forcastService = ForecastService(specificCall: "flights")
-        forcastService.getForecast(flyFrom: "CZ", flyTo: "porto", dateFrom: "08/11/2018", dateTo: "08/12/2018", daysInDestinationFrom: 2, daysInDestinationTo: 14, typeFlight: "round", passengers: 1, adults: 1, children: 0, infants: 0, directFlights: 0, currency: "EUR", priceFrom: 1, priceTo: 10000) { (currentFlight) in
-            print(currentFlight?.cityFrom)
-            print(currentFlight?.cityTo)
-        }
-        
-        
         return true
     }
 

@@ -27,8 +27,7 @@ class NetworkProcessor {
             if error == nil {
                 if let httpResponse = response as? HTTPURLResponse {
                     switch httpResponse.statusCode {
-                    case 200 :
-                        // successful response
+                    case 200 : // successful response
                         if let data = data {
                             do {
                                 let JSONDictionary = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
@@ -42,7 +41,7 @@ class NetworkProcessor {
                     }
                 }
             } else {
-                print("Error: \(error?.localizedDescription)")
+                print("Error: \(error?.localizedDescription ?? "Error: Nothing description")")
             }
         }
         dataTask.resume()

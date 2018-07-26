@@ -8,28 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		52659D582108601900CAFD4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52659D572108601900CAFD4B /* AppDelegate.swift */; };
-		52659D5A2108601900CAFD4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52659D592108601900CAFD4B /* ViewController.swift */; };
+		52659D5A2108601900CAFD4B /* CurrentFlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52659D592108601900CAFD4B /* CurrentFlightsViewController.swift */; };
 		52659D5D2108601900CAFD4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52659D5B2108601900CAFD4B /* Main.storyboard */; };
 		52659D602108601900CAFD4B /* kiwiapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52659D5E2108601900CAFD4B /* kiwiapp.xcdatamodeld */; };
-		52659D622108601900CAFD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52659D612108601900CAFD4B /* Assets.xcassets */; };
 		52659D652108601900CAFD4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52659D632108601900CAFD4B /* LaunchScreen.storyboard */; };
 		52659D6E21086D3000CAFD4B /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52659D6D21086D3000CAFD4B /* NetworkProcessor.swift */; };
 		52659D712108B92800CAFD4B /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52659D702108B92800CAFD4B /* ForecastService.swift */; };
 		52659D732108C02200CAFD4B /* CurrentFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52659D722108C02200CAFD4B /* CurrentFlight.swift */; };
+		5283821E210A259200FAEF62 /* MoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283821D210A259200FAEF62 /* MoreInformationViewController.swift */; };
+		52FAA80C2109ECBB00BDFC62 /* SearchFlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAA80B2109ECBB00BDFC62 /* SearchFlightsViewController.swift */; };
+		52FAA80E2109FAED00BDFC62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FAA80D2109FAED00BDFC62 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52659D542108601900CAFD4B /* kiwiapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kiwiapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52659D572108601900CAFD4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52659D592108601900CAFD4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52659D592108601900CAFD4B /* CurrentFlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFlightsViewController.swift; sourceTree = "<group>"; };
 		52659D5C2108601900CAFD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52659D5F2108601900CAFD4B /* kiwiapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kiwiapp.xcdatamodel; sourceTree = "<group>"; };
-		52659D612108601900CAFD4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52659D642108601900CAFD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52659D662108601900CAFD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52659D6D21086D3000CAFD4B /* NetworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
 		52659D702108B92800CAFD4B /* ForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 		52659D722108C02200CAFD4B /* CurrentFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFlight.swift; sourceTree = "<group>"; };
+		5283821D210A259200FAEF62 /* MoreInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationViewController.swift; sourceTree = "<group>"; };
+		52FAA80B2109ECBB00BDFC62 /* SearchFlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightsViewController.swift; sourceTree = "<group>"; };
+		52FAA80D2109FAED00BDFC62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +68,9 @@
 			children = (
 				52659D662108601900CAFD4B /* Info.plist */,
 				52659D6C2108605600CAFD4B /* Supporting files */,
-				52659D592108601900CAFD4B /* ViewController.swift */,
 				52659D6F21086D3300CAFD4B /* Model */,
-				52659D5B2108601900CAFD4B /* Main.storyboard */,
+				52FAA80A2109E6B300BDFC62 /* View */,
+				52FAA8092109E69400BDFC62 /* Controller */,
 				52659D5E2108601900CAFD4B /* kiwiapp.xcdatamodeld */,
 			);
 			path = kiwiapp;
@@ -75,8 +79,8 @@
 		52659D6C2108605600CAFD4B /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				52FAA80D2109FAED00BDFC62 /* Assets.xcassets */,
 				52659D572108601900CAFD4B /* AppDelegate.swift */,
-				52659D612108601900CAFD4B /* Assets.xcassets */,
 				52659D632108601900CAFD4B /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting files";
@@ -90,6 +94,24 @@
 				52659D722108C02200CAFD4B /* CurrentFlight.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		52FAA8092109E69400BDFC62 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52659D592108601900CAFD4B /* CurrentFlightsViewController.swift */,
+				52FAA80B2109ECBB00BDFC62 /* SearchFlightsViewController.swift */,
+				5283821D210A259200FAEF62 /* MoreInformationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52FAA80A2109E6B300BDFC62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52659D5B2108601900CAFD4B /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52659D652108601900CAFD4B /* LaunchScreen.storyboard in Resources */,
-				52659D622108601900CAFD4B /* Assets.xcassets in Resources */,
+				52FAA80E2109FAED00BDFC62 /* Assets.xcassets in Resources */,
 				52659D5D2108601900CAFD4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,10 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				52659D602108601900CAFD4B /* kiwiapp.xcdatamodeld in Sources */,
-				52659D5A2108601900CAFD4B /* ViewController.swift in Sources */,
+				52659D5A2108601900CAFD4B /* CurrentFlightsViewController.swift in Sources */,
 				52659D582108601900CAFD4B /* AppDelegate.swift in Sources */,
+				52FAA80C2109ECBB00BDFC62 /* SearchFlightsViewController.swift in Sources */,
 				52659D732108C02200CAFD4B /* CurrentFlight.swift in Sources */,
 				52659D712108B92800CAFD4B /* ForecastService.swift in Sources */,
+				5283821E210A259200FAEF62 /* MoreInformationViewController.swift in Sources */,
 				52659D6E21086D3000CAFD4B /* NetworkProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
