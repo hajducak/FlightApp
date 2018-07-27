@@ -6,4 +6,5 @@ target 'kiwiapp' do
 
   # Pods for kiwiapp
     pod 'Alamofire', '~> 4.7.3'
+    pod 'ObjectMapper'
 end

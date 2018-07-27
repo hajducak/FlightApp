@@ -5,15 +5,14 @@
 //  Created by MacBook Pro on 25.7.18.
 //  Copyright © 2018 MacBook Pro. All rights reserved.
 //
-/*  https://api.skypicker.com/flights?flyFrom=CZ&to=porto&dateFrom=08/11/2018&dateTo=08/12/2018&daysInDestinationFrom=2&daysInDestinationTo=14&typeFlight=round&passengers=1&adults=1&children=0&infants=0&directFlights=0&partner=picky&curr=EUR&price_from=1&price_to=10000&asc=1&maxFlyDuration=10
- */
 
 import Foundation
 import Alamofire
 
 class ForecastService {
     let forecastBaseURL: URL?
-    let specificCall: String // locations, flights, flights_multi, check_flights, save_booking, paymill_payment, zooz_payment, watchdog
+    let specificCall: String
+    // locations, flights, flights_multi, check_flights, save_booking, paymill_payment, zooz_payment, watchdog
     
     init(specificCall: String) {
         self.specificCall = specificCall
@@ -25,8 +24,8 @@ class ForecastService {
             Alamofire.request(forecastURL).responseJSON(completionHandler: { (response) in
                 if let jsonDictionary = response.result.value as? [String : Any] {
                     if let currentFlightDictionary = jsonDictionary["data"] as? [[String : Any]]  {
-                        // Iba prvý objekt takze iba jeden flight vypišem
-                        let currentFlight = CurrentFlight(flightDictionary: currentFlightDictionary[1])
+                        //let currentFlight = CurrentFlight(flightDictionary: currentFlightDictionary[1])
+                        let currentFlight = CurrentFlight(JSON: currentFlightDictionary[1])
                         completion(currentFlight)
                     } else {
                         completion(nil)
@@ -34,8 +33,6 @@ class ForecastService {
                 }
             })
         }
-        
     }
-    
 }
 

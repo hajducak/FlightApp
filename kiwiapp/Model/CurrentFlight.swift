@@ -7,25 +7,51 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class CurrentFlight {
-    let aTimeUTC: Int?
-    let dTimeUTC: Int?
-    let aTime: Int?
-    let dTime: Int?
-    let price: Int?
-    let distance: Double?
-    let cityFrom: String?
-    let cityTo: String?
-    let id: String?
-    let deep_link: String?
-    let countryFrom: [String: String]?
-    let countryTo: [String: String]?
-    let airlines: [String]?
-    let fly_duration: String?
-    let return_duration: String?
-    let baglimit: [String: Int]?
-    let route: [[String: Any]]?
+class CurrentFlight: Mappable {
+    
+    var aTimeUTC: Int?
+    var dTimeUTC: Int?
+    var aTime: Int?
+    var dTime: Int?
+    var price: Int?
+    var distance: Double?
+    var cityFrom: String?
+    var cityTo: String?
+    var id: String?
+    var deep_link: String?
+    var countryFrom: [String: String]?
+    var countryTo: [String: String]?
+    var airlines: [String]?
+    var fly_duration: String?
+    var return_duration: String?
+    var baglimit: [String: Int]?
+    var route: [[String: Any]]?
+    
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        self.aTimeUTC <- map[FlightKeys.aTimeUTC]
+        self.dTimeUTC <- map[FlightKeys.dTimeUTC]
+        self.aTime <- map[FlightKeys.aTime]
+        self.dTime <- map[FlightKeys.dTime]
+        self.price <- map[FlightKeys.price]
+        self.distance <- map[FlightKeys.distance]
+        self.cityFrom <- map[FlightKeys.cityFrom]
+        self.cityTo <- map[FlightKeys.cityTo]
+        self.id <- map[FlightKeys.id]
+        self.deep_link <- map[FlightKeys.deep_link]
+        self.countryFrom <- map[FlightKeys.countryFrom]
+        self.countryTo <- map[FlightKeys.countryTo]
+        self.airlines <- map[FlightKeys.airlines]
+        self.fly_duration <- map[FlightKeys.fly_duration]
+        self.return_duration <- map[FlightKeys.return_duration]
+        self.baglimit <- map[FlightKeys.baglimit]
+        self.route <- map[FlightKeys.route]
+    }
     
     struct FlightKeys {
         static let aTimeUTC = "aTimeUTC"
@@ -45,25 +71,5 @@ class CurrentFlight {
         static let return_duration = "return_duration"
         static let baglimit = "baglimit"
         static let route = "route"
-    }
-    
-    init(flightDictionary: [String: Any]) {
-        self.aTimeUTC = flightDictionary[FlightKeys.aTimeUTC] as? Int
-        self.dTimeUTC = flightDictionary[FlightKeys.dTimeUTC] as? Int
-        self.aTime = flightDictionary[FlightKeys.aTime] as? Int
-        self.dTime = flightDictionary[FlightKeys.dTime] as? Int
-        self.price = flightDictionary[FlightKeys.price] as? Int
-        self.distance = flightDictionary[FlightKeys.distance] as? Double
-        self.cityFrom = flightDictionary[FlightKeys.cityFrom] as? String
-        self.cityTo = flightDictionary[FlightKeys.cityTo] as? String
-        self.id = flightDictionary[FlightKeys.id] as? String
-        self.deep_link = flightDictionary[FlightKeys.deep_link] as? String
-        self.countryFrom = flightDictionary[FlightKeys.countryFrom] as? [String: String]
-        self.countryTo = flightDictionary[FlightKeys.countryTo] as? [String: String]
-        self.airlines = flightDictionary[FlightKeys.airlines] as? [String]
-        self.fly_duration = flightDictionary[FlightKeys.fly_duration] as? String
-        self.return_duration = flightDictionary[FlightKeys.return_duration] as? String
-        self.baglimit = flightDictionary[FlightKeys.baglimit] as? [String: Int]
-        self.route = flightDictionary[FlightKeys.route] as? [[String: Any]]
     }
 }
