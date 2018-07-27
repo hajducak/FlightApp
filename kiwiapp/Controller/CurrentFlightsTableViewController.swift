@@ -15,16 +15,10 @@ class CurrentFlightsTableViewController: UITableViewController {
     var forecastSpecificCall = "flights"
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
         let forecastService = ForecastService(specificCall: forecastSpecificCall)
-        forecastService.getCurrentFlight(flyFrom: "CZ", flyTo: "porto", dateFrom: "08/11/2018", dateTo: "08/12/2018", daysInDestinationFrom: 2, daysInDestinationTo: 14, typeFlight: "round", passengers: 1, adults: 1, children: 0, infants: 0, directFlights: 0, currency: "EUR", priceFrom: 1, priceTo: 10000, maxFlyDuration: 10) { (currentFlight) in
-            //DispatchQueue.main.async {
-                    self.data = currentFlight
-                    self.tableView.reloadData()
-            //}
+        forecastService.getCurrentFlight(flyFrom: "CZ", flyTo: "porto", dateFrom: "08/11/2018", dateTo: "08/12/2018", daysInDestinationFrom: 2, daysInDestinationTo: 14, typeFlight: "oneway", passengers: 1, adults: 1, children: 0, infants: 0, directFlights: 0, currency: "EUR", priceFrom: 1, priceTo: 10000, maxFlyDuration: 10) { (currentFlight) in
+                self.data = currentFlight
+                self.tableView.reloadData()
         }
     }
     
@@ -33,7 +27,7 @@ class CurrentFlightsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "roundFlightCell", for: indexPath) as! CurrentFlightTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "onewayFlightCell", for: indexPath) as! CurrentFlightTableViewCell
         let currentFlight = data[indexPath.row]
         cell.currentFlight = currentFlight
         return cell

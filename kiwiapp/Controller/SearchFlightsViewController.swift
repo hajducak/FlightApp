@@ -22,18 +22,6 @@ class SearchFlightsViewController: UIViewController, UIPickerViewDataSource, UIP
     let typeOfFlightPickerData = ["oneway", "round", "return", "roundtrip", "multicity"]
     var typeFlight: String?
     
-    struct data {
-        var typeFlight: String?
-        var cityFrom: String?
-        var cityTo: String?
-        var dateFrom: String?
-        var dateTo: String?
-        var passagers: Int?
-        var adults: Int?
-        var childrens: Int?
-        var infants: Int?
-    }
-    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }

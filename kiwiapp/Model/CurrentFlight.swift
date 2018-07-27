@@ -11,10 +11,10 @@ import ObjectMapper
 
 class CurrentFlight: Mappable {
     
-    var aTimeUTC: Int?
-    var dTimeUTC: Int?
-    var aTime: Int?
-    var dTime: Int?
+    var arrivalTimeUTC: Int?
+    var departureTimeUTC: Int?
+    var arrivalTime: Int?
+    var departureTime: Int?
     var price: Int?
     var distance: Double?
     var cityFrom: String?
@@ -34,10 +34,10 @@ class CurrentFlight: Mappable {
     }
     
     func mapping(map: Map) {
-        self.aTimeUTC <- map[FlightKeys.aTimeUTC]
-        self.dTimeUTC <- map[FlightKeys.dTimeUTC]
-        self.aTime <- map[FlightKeys.aTime]
-        self.dTime <- map[FlightKeys.dTime]
+        self.arrivalTimeUTC <- map[FlightKeys.arrivalTimeUTC]
+        self.departureTimeUTC <- map[FlightKeys.departureTimeUTC]
+        self.arrivalTime <- map[FlightKeys.arrivalTime]
+        self.departureTime <- map[FlightKeys.departureTime]
         self.price <- map[FlightKeys.price]
         self.distance <- map[FlightKeys.distance]
         self.cityFrom <- map[FlightKeys.cityFrom]
@@ -54,10 +54,10 @@ class CurrentFlight: Mappable {
     }
     
     struct FlightKeys {
-        static let aTimeUTC = "aTimeUTC"
-        static let dTimeUTC = "dTimeUTC"
-        static let aTime = "aTime"
-        static let dTime = "dTime"
+        static let arrivalTimeUTC = "aTimeUTC"
+        static let departureTimeUTC = "dTimeUTC"
+        static let arrivalTime = "aTime"
+        static let departureTime = "dTime"
         static let price = "price"
         static let distance = "distance"
         static let cityFrom = "cityFrom"
