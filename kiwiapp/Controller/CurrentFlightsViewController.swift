@@ -17,18 +17,10 @@ class CurrentFlightsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let forcastService = ForecastService(specificCall: forecastSpecificCall)
-        forcastService.getForecast(flyFrom: "CZ", flyTo: "porto", dateFrom: "08/11/2018", dateTo: "08/12/2018", daysInDestinationFrom: 2, daysInDestinationTo: 14, typeFlight: "round", passengers: 1, adults: 1, children: 0, infants: 0, directFlights: 0, currency: "EUR", priceFrom: 1, priceTo: 10000, maxFlyDuration: 10) { (currentFlight) in
-            if let currentFlight = currentFlight {
-                DispatchQueue.main.async {
-                    if let flyFrom = currentFlight.cityFrom {
-                        // TODO: set label text to value of flyFrom
-                        self.cityFromLabel.text = "\(flyFrom)"
-                    }
-                }
-            }
+        let forecastService = ForecastService(specificCall: forecastSpecificCall)
+        forecastService.getCurrentFlight(flyFrom: "CZ", flyTo: "porto", dateFrom: "08/11/2018", dateTo: "08/12/2018", daysInDestinationFrom: 2, daysInDestinationTo: 14, typeFlight: "round", passengers: 1, adults: 1, children: 0, infants: 0, directFlights: 0, currency: "EUR", priceFrom: 1, priceTo: 10000, maxFlyDuration: 10) { (currentFlight) in
+            self.cityFromLabel.text = currentFlight?.cityTo
         }
-        
         
     }
 

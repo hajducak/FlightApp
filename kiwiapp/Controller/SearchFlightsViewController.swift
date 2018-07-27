@@ -9,10 +9,30 @@
 import UIKit
 
 class SearchFlightsViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
+    
+    @IBOutlet weak var cityFromTextField: UITextField!
+    @IBOutlet weak var cityToTextField: UITextField!
+    @IBOutlet weak var dateFromTextField: UITextField!
+    @IBOutlet weak var dateToTextField: UITextField!
+    @IBOutlet weak var passangersTextField: UITextField!
+    @IBOutlet weak var adultsTextField: UITextField!
+    @IBOutlet weak var childrensTextField: UITextField!
+    @IBOutlet weak var infantsTextField: UITextField!
     @IBOutlet weak var pickerView: UIPickerView!
     let typeOfFlightPickerData = ["oneway", "round", "return", "roundtrip", "multicity"]
     var typeFlight: String?
+    
+    struct data {
+        var typeFlight: String?
+        var cityFrom: String?
+        var cityTo: String?
+        var dateFrom: String?
+        var dateTo: String?
+        var passagers: Int?
+        var adults: Int?
+        var childrens: Int?
+        var infants: Int?
+    }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -39,6 +59,7 @@ class SearchFlightsViewController: UIViewController, UIPickerViewDataSource, UIP
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
     
     // MARK: - Navigation

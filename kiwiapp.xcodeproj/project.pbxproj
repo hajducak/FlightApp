@@ -12,15 +12,17 @@
 		52659D5D2108601900CAFD4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52659D5B2108601900CAFD4B /* Main.storyboard */; };
 		52659D602108601900CAFD4B /* kiwiapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52659D5E2108601900CAFD4B /* kiwiapp.xcdatamodeld */; };
 		52659D652108601900CAFD4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52659D632108601900CAFD4B /* LaunchScreen.storyboard */; };
-		52659D6E21086D3000CAFD4B /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52659D6D21086D3000CAFD4B /* NetworkProcessor.swift */; };
 		52659D712108B92800CAFD4B /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52659D702108B92800CAFD4B /* ForecastService.swift */; };
 		52659D732108C02200CAFD4B /* CurrentFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52659D722108C02200CAFD4B /* CurrentFlight.swift */; };
 		5283821E210A259200FAEF62 /* MoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283821D210A259200FAEF62 /* MoreInformationViewController.swift */; };
 		52FAA80C2109ECBB00BDFC62 /* SearchFlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAA80B2109ECBB00BDFC62 /* SearchFlightsViewController.swift */; };
 		52FAA80E2109FAED00BDFC62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FAA80D2109FAED00BDFC62 /* Assets.xcassets */; };
+		7A7E23F1DFCB4BEEADA49DFF /* Pods_kiwiapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588A3B3E8C4172AF1DE3410 /* Pods_kiwiapp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E77AB7FE927CB93A3FD385C /* Pods-kiwiapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiwiapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-kiwiapp/Pods-kiwiapp.release.xcconfig"; sourceTree = "<group>"; };
+		4A83AF87FB93F2C4A26E9ABF /* Pods-kiwiapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiwiapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kiwiapp/Pods-kiwiapp.debug.xcconfig"; sourceTree = "<group>"; };
 		52659D542108601900CAFD4B /* kiwiapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kiwiapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52659D572108601900CAFD4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52659D592108601900CAFD4B /* CurrentFlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFlightsViewController.swift; sourceTree = "<group>"; };
@@ -28,12 +30,12 @@
 		52659D5F2108601900CAFD4B /* kiwiapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kiwiapp.xcdatamodel; sourceTree = "<group>"; };
 		52659D642108601900CAFD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52659D662108601900CAFD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52659D6D21086D3000CAFD4B /* NetworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
 		52659D702108B92800CAFD4B /* ForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 		52659D722108C02200CAFD4B /* CurrentFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFlight.swift; sourceTree = "<group>"; };
 		5283821D210A259200FAEF62 /* MoreInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationViewController.swift; sourceTree = "<group>"; };
 		52FAA80B2109ECBB00BDFC62 /* SearchFlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightsViewController.swift; sourceTree = "<group>"; };
 		52FAA80D2109FAED00BDFC62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F588A3B3E8C4172AF1DE3410 /* Pods_kiwiapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kiwiapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A7E23F1DFCB4BEEADA49DFF /* Pods_kiwiapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B17345EF1A36BE609701050 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F588A3B3E8C4172AF1DE3410 /* Pods_kiwiapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		52659D4B2108601900CAFD4B = {
 			isa = PBXGroup;
 			children = (
 				52659D562108601900CAFD4B /* kiwiapp */,
 				52659D552108601900CAFD4B /* Products */,
+				E7C6157346783E8226F5415B /* Pods */,
+				2B17345EF1A36BE609701050 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,7 +102,6 @@
 		52659D6F21086D3300CAFD4B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				52659D6D21086D3000CAFD4B /* NetworkProcessor.swift */,
 				52659D702108B92800CAFD4B /* ForecastService.swift */,
 				52659D722108C02200CAFD4B /* CurrentFlight.swift */,
 			);
@@ -114,6 +126,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E7C6157346783E8226F5415B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A83AF87FB93F2C4A26E9ABF /* Pods-kiwiapp.debug.xcconfig */,
+				1E77AB7FE927CB93A3FD385C /* Pods-kiwiapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52659D692108601900CAFD4B /* Build configuration list for PBXNativeTarget "kiwiapp" */;
 			buildPhases = (
+				94453FB4E671C1448CF1F294 /* [CP] Check Pods Manifest.lock */,
 				52659D502108601900CAFD4B /* Sources */,
 				52659D512108601900CAFD4B /* Frameworks */,
 				52659D522108601900CAFD4B /* Resources */,
+				65549D96D2148D6B9595DCC7 /* [CP] Embed Pods Frameworks */,
+				5904C82C1D6F6D46241A855A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,6 +205,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5904C82C1D6F6D46241A855A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kiwiapp/Pods-kiwiapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65549D96D2148D6B9595DCC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-kiwiapp/Pods-kiwiapp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kiwiapp/Pods-kiwiapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94453FB4E671C1448CF1F294 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kiwiapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52659D502108601900CAFD4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -193,7 +271,6 @@
 				52659D732108C02200CAFD4B /* CurrentFlight.swift in Sources */,
 				52659D712108B92800CAFD4B /* ForecastService.swift in Sources */,
 				5283821E210A259200FAEF62 /* MoreInformationViewController.swift in Sources */,
-				52659D6E21086D3000CAFD4B /* NetworkProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +405,7 @@
 		};
 		52659D6A2108601900CAFD4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A83AF87FB93F2C4A26E9ABF /* Pods-kiwiapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -343,6 +421,7 @@
 		};
 		52659D6B2108601900CAFD4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E77AB7FE927CB93A3FD385C /* Pods-kiwiapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
