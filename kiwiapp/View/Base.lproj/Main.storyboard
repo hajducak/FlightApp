@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yk7-wi-sBy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gm1-yf-dLx">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,6 +13,95 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Current Flights View Controller-->
+        <scene sceneID="Xok-K0-yfQ">
+            <objects>
+                <viewController id="OoY-PB-PWk" customClass="CurrentFlightsViewController" customModule="kiwiapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9zT-76-3r0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="TpW-6s-t18"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jK9-gV-rgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1442" y="-282"/>
+        </scene>
+        <!--Current Flights Table View Controller-->
+        <scene sceneID="vuZ-FQ-eIT">
+            <objects>
+                <tableViewController id="gm1-yf-dLx" customClass="CurrentFlightsTableViewController" customModule="kiwiapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Oes-yb-09e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="roundFlightCell" rowHeight="183" id="99a-ye-sgd" customClass="CurrentFlightTableViewCell" customModule="kiwiapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="183"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="99a-ye-sgd" id="I3d-rs-uUu">
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="182.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uPd-Iu-0vo">
+                                            <rect key="frame" x="16" y="11" width="64" height="64"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pv2-j1-cCw">
+                                            <rect key="frame" x="16" y="108" width="64" height="64"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Porto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qix-Ba-ADs">
+                                            <rect key="frame" x="88" y="108" width="216" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prague" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMA-q5-vTn">
+                                            <rect key="frame" x="88" y="11" width="216" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axL-tI-hlo">
+                                            <rect key="frame" x="88" y="48" width="216" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spu-cg-nTL">
+                                            <rect key="frame" x="88" y="145" width="216" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cityFromLabel" destination="wMA-q5-vTn" id="xBR-7n-cgb"/>
+                                    <outlet property="cityToLabel" destination="Qix-Ba-ADs" id="ooB-e5-X8k"/>
+                                    <outlet property="imageFromImageView" destination="uPd-Iu-0vo" id="e9C-5B-GSk"/>
+                                    <outlet property="imageToImageView" destination="pv2-j1-cCw" id="u58-7K-nxh"/>
+                                    <outlet property="timeFromLabel" destination="axL-tI-hlo" id="XZH-fb-fc1"/>
+                                    <outlet property="timeToLabel" destination="Spu-cg-nTL" id="T0n-th-fxH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gm1-yf-dLx" id="zp6-EP-doj"/>
+                            <outlet property="delegate" destination="gm1-yf-dLx" id="gVw-Vq-xF7"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgB-zU-yHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306" y="-282"/>
+        </scene>
         <!--More Information-->
         <scene sceneID="Mhb-ca-GoR">
             <objects>
@@ -229,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VjB-T5-cdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1312.5" y="520.77464788732391"/>
+            <point key="canvasLocation" x="932" y="520"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vre-nQ-YE9">
@@ -245,7 +334,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uxw-d4-6oP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-566" y="367"/>
+            <point key="canvasLocation" x="-656" y="364"/>
         </scene>
         <!--Search Flight-->
         <scene sceneID="FgC-Ww-qZW">
@@ -592,47 +681,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QKd-YN-CLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="544" y="521"/>
-        </scene>
-        <!--Current Flights View Controller-->
-        <scene sceneID="Lcz-Ty-bmB">
-            <objects>
-                <viewController id="Yk7-wi-sBy" customClass="CurrentFlightsViewController" customModule="kiwiapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gr3-6k-dLI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="#3" translatesAutoresizingMaskIntoConstraints="NO" id="gdo-XZ-Dzd">
-                                <rect key="frame" x="0.0" y="10" width="320" height="568"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPo-nB-kNG">
-                                <rect key="frame" x="137" y="262" width="115" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="gdo-XZ-Dzd" firstAttribute="centerX" secondItem="zmI-dW-OWn" secondAttribute="centerX" id="COz-Nu-S7S"/>
-                            <constraint firstItem="gdo-XZ-Dzd" firstAttribute="centerY" secondItem="zmI-dW-OWn" secondAttribute="centerY" id="HLc-ai-nKb"/>
-                            <constraint firstItem="gdo-XZ-Dzd" firstAttribute="width" secondItem="Gr3-6k-dLI" secondAttribute="width" id="bFi-2o-c3b"/>
-                            <constraint firstItem="gdo-XZ-Dzd" firstAttribute="height" secondItem="Gr3-6k-dLI" secondAttribute="height" id="g2V-6I-798"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="zmI-dW-OWn"/>
-                    </view>
-                    <connections>
-                        <outlet property="cityFromLabel" destination="LPo-nB-kNG" id="8TQ-Um-MPf"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cdg-cW-v6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="544" y="-186"/>
+            <point key="canvasLocation" x="219" y="520"/>
         </scene>
     </scenes>
     <resources>
         <image name="#2" width="3648" height="4872"/>
-        <image name="#3" width="3648" height="4872"/>
     </resources>
 </document>

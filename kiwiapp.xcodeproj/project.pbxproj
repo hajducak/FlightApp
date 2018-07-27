@@ -15,6 +15,8 @@
 		52659D712108B92800CAFD4B /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52659D702108B92800CAFD4B /* ForecastService.swift */; };
 		52659D732108C02200CAFD4B /* CurrentFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52659D722108C02200CAFD4B /* CurrentFlight.swift */; };
 		5283821E210A259200FAEF62 /* MoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283821D210A259200FAEF62 /* MoreInformationViewController.swift */; };
+		52838220210B563E00FAEF62 /* CurrentFlightsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283821F210B563E00FAEF62 /* CurrentFlightsTableViewController.swift */; };
+		52838222210B582A00FAEF62 /* CurrentFlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52838221210B582A00FAEF62 /* CurrentFlightTableViewCell.swift */; };
 		52FAA80C2109ECBB00BDFC62 /* SearchFlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FAA80B2109ECBB00BDFC62 /* SearchFlightsViewController.swift */; };
 		52FAA80E2109FAED00BDFC62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FAA80D2109FAED00BDFC62 /* Assets.xcassets */; };
 		7A7E23F1DFCB4BEEADA49DFF /* Pods_kiwiapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588A3B3E8C4172AF1DE3410 /* Pods_kiwiapp.framework */; };
@@ -33,6 +35,8 @@
 		52659D702108B92800CAFD4B /* ForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 		52659D722108C02200CAFD4B /* CurrentFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFlight.swift; sourceTree = "<group>"; };
 		5283821D210A259200FAEF62 /* MoreInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationViewController.swift; sourceTree = "<group>"; };
+		5283821F210B563E00FAEF62 /* CurrentFlightsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFlightsTableViewController.swift; sourceTree = "<group>"; };
+		52838221210B582A00FAEF62 /* CurrentFlightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFlightTableViewCell.swift; sourceTree = "<group>"; };
 		52FAA80B2109ECBB00BDFC62 /* SearchFlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightsViewController.swift; sourceTree = "<group>"; };
 		52FAA80D2109FAED00BDFC62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F588A3B3E8C4172AF1DE3410 /* Pods_kiwiapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kiwiapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +118,8 @@
 				52659D592108601900CAFD4B /* CurrentFlightsViewController.swift */,
 				52FAA80B2109ECBB00BDFC62 /* SearchFlightsViewController.swift */,
 				5283821D210A259200FAEF62 /* MoreInformationViewController.swift */,
+				5283821F210B563E00FAEF62 /* CurrentFlightsTableViewController.swift */,
+				52838221210B582A00FAEF62 /* CurrentFlightTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -269,8 +275,10 @@
 				52659D602108601900CAFD4B /* kiwiapp.xcdatamodeld in Sources */,
 				52659D5A2108601900CAFD4B /* CurrentFlightsViewController.swift in Sources */,
 				52659D582108601900CAFD4B /* AppDelegate.swift in Sources */,
+				52838222210B582A00FAEF62 /* CurrentFlightTableViewCell.swift in Sources */,
 				52FAA80C2109ECBB00BDFC62 /* SearchFlightsViewController.swift in Sources */,
 				52659D732108C02200CAFD4B /* CurrentFlight.swift in Sources */,
+				52838220210B563E00FAEF62 /* CurrentFlightsTableViewController.swift in Sources */,
 				52659D712108B92800CAFD4B /* ForecastService.swift in Sources */,
 				5283821E210A259200FAEF62 /* MoreInformationViewController.swift in Sources */,
 			);
